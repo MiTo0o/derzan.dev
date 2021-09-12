@@ -1,0 +1,93 @@
+<html>
+
+
+
+    <body> 
+      
+      
+      
+        (づ｡◕‿‿◕｡)づ
+        
+        <h1>
+            Click "change pic" for some memes
+        <h1>
+        
+        <h2>
+            ༼ つ ಥ_ಥ ༽つ
+        <h2>
+        
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <img id="puppy" style="height: 300px" src="https://i1.wp.com/windowscustomization.com/wp-content/uploads/2019/04/Otori-Sama.gif?fit=768%2C432&quality=80&strip=all&ssl=1"/>
+        </a>
+        
+        
+        <style>
+            h1 {color:red;}
+            h2 {color:brown;}
+        </style>
+        
+
+        <button style="height: 50px" onclick="dosomething()">
+            change pic
+        </button>
+   
+   
+        <audio id="vibingCat" type="audio/mp3" style="width:0px; height:0px; visibility:hidden" src="https://raw.githubusercontent.com/MiTo0o/MiTo0o.github.io/main/Cat%20Vibing%20To%20Ievan%20Polkka.mp3">
+        <audio id="rick" type="audio/mp3" style="width:0px; height:0px; visibility:hidden" src="https://raw.githubusercontent.com/MiTo0o/MiTo0o.github.io/main/Ricky.mp3">
+    <body>
+
+    <script>
+    function dosomething() {
+        /*
+        // list of images used in rotation (maybe useful later?)
+        var meme = [
+            "https://i.kym-cdn.com/entries/icons/original/000/034/772/Untitled-1.png",
+            "https://i.imgur.com/F0Cfwda.jpeg",
+            "https://www.awesomeinventions.com/wp-content/uploads/2019/05/hilarious-animal-meme-sculptures-egg-puppy.jpg",
+            "https://3.bp.blogspot.com/-3SK8UTnWVY0/Vt8Cw0VDh-I/AAAAAAAAWlY/T1s5A4cUeYs/s1600/funny%2Banimal%2Bmemes%2B%252839%2529.jpg",
+            "https://i.redd.it/py33ke03f8241.png",
+            "https://www.mandatory.com/assets/uploads/2017/04/1-e1491476898902.jpg",
+            "https://img-comment-fun.9cache.com/media/a47ypmA/a49JoV5M_700w_0.jpg",
+            "https://media1.tenor.com/images/543de20d1456e6c23e42325fe0c84577/tenor.gif?itemid=19196618"
+        ] 
+        */
+        var doc = document.getElementById("puppy");
+        var music1 = document.getElementById("vibingCat");
+        var music2 = document.getElementById("rick");
+
+        if (doc.src === "https://i1.wp.com/windowscustomization.com/wp-content/uploads/2019/04/Otori-Sama.gif?fit=768%2C432&quality=80&strip=all&ssl=1") {
+            doc.src = "https://i.kym-cdn.com/entries/icons/original/000/034/772/Untitled-1.png"
+        } 
+        else if (doc.src === "https://i.kym-cdn.com/entries/icons/original/000/034/772/Untitled-1.png"){
+            doc.src = "https://i.imgur.com/F0Cfwda.jpeg"
+        }
+        else if (doc.src === "https://i.imgur.com/F0Cfwda.jpeg"){
+            doc.src = "https://www.awesomeinventions.com/wp-content/uploads/2019/05/hilarious-animal-meme-sculptures-egg-puppy.jpg"
+        }
+        else if (doc.src === "https://www.awesomeinventions.com/wp-content/uploads/2019/05/hilarious-animal-meme-sculptures-egg-puppy.jpg") {
+            doc.src = "https://img-comment-fun.9cache.com/media/a47ypmA/a49JoV5M_700w_0.jpg"
+            music2.play();
+        }
+        else if (doc.src === "https://img-comment-fun.9cache.com/media/a47ypmA/a49JoV5M_700w_0.jpg"){
+            doc.src = "https://3.bp.blogspot.com/-3SK8UTnWVY0/Vt8Cw0VDh-I/AAAAAAAAWlY/T1s5A4cUeYs/s1600/funny%2Banimal%2Bmemes%2B%252839%2529.jpg"
+            music2.pause();
+        }
+        else if (doc.src === "https://3.bp.blogspot.com/-3SK8UTnWVY0/Vt8Cw0VDh-I/AAAAAAAAWlY/T1s5A4cUeYs/s1600/funny%2Banimal%2Bmemes%2B%252839%2529.jpg"){
+            doc.src = "https://i.redd.it/py33ke03f8241.png"
+        }
+        else if (doc.src === "https://i.redd.it/py33ke03f8241.png"){
+            doc.src = "https://www.mandatory.com/assets/uploads/2017/04/1-e1491476898902.jpg"
+        }
+        else if (doc.src === "https://www.mandatory.com/assets/uploads/2017/04/1-e1491476898902.jpg") {
+            doc.src = "https://media1.tenor.com/images/543de20d1456e6c23e42325fe0c84577/tenor.gif?itemid=19196618"
+            music1.play();
+        }
+        else if (doc.src === "https://media1.tenor.com/images/543de20d1456e6c23e42325fe0c84577/tenor.gif?itemid=19196618") {
+            doc.src = "https://i1.wp.com/windowscustomization.com/wp-content/uploads/2019/04/Otori-Sama.gif?fit=768%2C432&quality=80&strip=all&ssl=1"
+            music1.pause();
+        }
+    }
+   </script> 
+
+</html>
+
