@@ -19,6 +19,7 @@ $(function() {
     path.style.strokeDashoffset = '0';
   }
   
+  animatePath('#sig', 'stroke-dashoffset 10s ease-in-out');
   
   $("#signature").on({
     mouseenter: function () {
