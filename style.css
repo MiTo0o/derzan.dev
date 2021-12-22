@@ -1,10 +1,5 @@
 body {
-  background-color: #223532;
-}
-#name-title {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 500%;
-  color: whitesmoke;
+  background-color: #121212;
 }
 
 #wrapper {
@@ -27,4 +22,9 @@ a {
 }
 #footer-socials {
   margin: auto;
+}
+#sig {
+  stroke: #ffffff;
+  stroke-width: 5;
+  stroke-opacity: 0.86;
 }
