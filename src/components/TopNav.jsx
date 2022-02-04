@@ -9,10 +9,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import ToggleTheme from './ToggleTheme';
+import sideLogo from '../sideLogo.svg';
+import centerLogo from '../centerLogo.svg';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 
-const TopNav = () => {
+const TopNav = ({darkThemeState, setDarkThemeState}) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -24,19 +27,17 @@ const TopNav = () => {
     setAnchorElNav(null);
   };
 
-
-
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+    <AppBar position="fixed">
+      <Container maxWidth="lg">
+        <Toolbar disableGutter>
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            LOGO
+          <img src={sideLogo} className="App-logo" alt="logo" />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -81,7 +82,7 @@ const TopNav = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            LOGO
+          <img src={centerLogo} className="App-logo" alt="logo" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -94,6 +95,10 @@ const TopNav = () => {
               </Button>
             ))}
           </Box>
+          <ToggleTheme
+            darkThemeState={darkThemeState}
+            setDarkThemeState={setDarkThemeState}
+          />
         </Toolbar>
       </Container>
     </AppBar>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
-import ToggleTheme from './components/ToggleTheme';
 import TopNav from './components/TopNav';
 
 function BaseApp() {
@@ -26,8 +25,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline/>
       <BaseApp />
-      <TopNav/>
-      <ToggleTheme
+      <TopNav
         darkThemeState={darkThemeState}
         setDarkThemeState={setDarkThemeState}
       />
