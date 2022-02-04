@@ -13,7 +13,7 @@ import ToggleTheme from './ToggleTheme';
 import sideLogo from '../sideLogo.svg';
 import centerLogo from '../centerLogo.svg';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Home', 'About', 'Projects'];
 
 const TopNav = ({darkThemeState, setDarkThemeState}) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
