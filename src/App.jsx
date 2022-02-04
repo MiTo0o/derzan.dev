@@ -1,25 +1,33 @@
-
+import React, { useState } from 'react';
 import './App.css';
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
-import ThemeProvider from '@material-ui/core/styles/ThemeProvider';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from "@mui/material/CssBaseline";
+import ToggleTheme from './components/ToggleTheme';
+
+function BaseApp() {
+  return (
+  <div className="App">
+  </div>
+  );
+}
 
 function App() {
+
+  const [darkThemeState, setDarkThemeState] = useState(true);
+  const palletType = darkThemeState ? "dark" : "light";
+  const darkTheme = createTheme({
+    palette: {
+      mode: palletType
+    }
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline/>
+      <BaseApp />
+      <ToggleTheme darkThemeState={darkThemeState} setDarkThemeState={setDarkThemeState}/>
+
+    </ThemeProvider>
   );
 }
 
