@@ -3,6 +3,7 @@ import './App.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
 import ToggleTheme from './components/ToggleTheme';
+import TopNav from './components/TopNav';
 
 function BaseApp() {
   return (
@@ -25,8 +26,11 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline/>
       <BaseApp />
-      <ToggleTheme darkThemeState={darkThemeState} setDarkThemeState={setDarkThemeState}/>
-
+      <TopNav/>
+      <ToggleTheme
+        darkThemeState={darkThemeState}
+        setDarkThemeState={setDarkThemeState}
+      />
     </ThemeProvider>
   );
 }
