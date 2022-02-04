@@ -29,7 +29,7 @@ const TopNav = ({darkThemeState, setDarkThemeState}) => {
 
   return (
     <AppBar position="fixed">
-      <Container maxWidth="lg">
+      <Container maxWidth="100%">
         <Toolbar disableGutter>
           <Typography
             variant="h6"
