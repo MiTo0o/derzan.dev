@@ -3,16 +3,16 @@ import './App.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
 import TopNav from './components/TopNav';
-
-function BaseApp() {
-  return (
-  <div className="App">
-  </div>
-  );
-}
+import Title from './components/Title';
+import Footer from './components/Footer';
+// function BaseApp() {
+//   return (
+//   <div className="App">
+//   </div>
+//   );
+// }
 
 function App() {
-
   const [darkThemeState, setDarkThemeState] = useState(true);
   const palletType = darkThemeState ? "dark" : "light";
   const darkTheme = createTheme({
@@ -24,11 +24,20 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline/>
-      <BaseApp />
-      <TopNav
-        darkThemeState={darkThemeState}
-        setDarkThemeState={setDarkThemeState}
-      />
+      <div className="box">
+        <div className="row header">
+          <TopNav
+            darkThemeState={darkThemeState}
+            setDarkThemeState={setDarkThemeState}
+          />
+        </div>
+        <div className="row content">
+          <Title/>
+        </div>
+        <div className="row footer">
+          <Footer/>
+        </div>
+      </div>
     </ThemeProvider>
   );
 }

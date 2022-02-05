@@ -19,6 +19,7 @@ const TopNav = ({darkThemeState, setDarkThemeState}) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
+    console.log(event.currentTarget);
     setAnchorElNav(event.currentTarget);
   };
 
@@ -28,9 +29,9 @@ const TopNav = ({darkThemeState, setDarkThemeState}) => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="static">
       <Container maxWidth="100%">
-        <Toolbar disableGutter>
+        <Toolbar>
           <Typography
             variant="h6"
             noWrap
