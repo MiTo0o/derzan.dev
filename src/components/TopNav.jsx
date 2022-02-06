@@ -18,12 +18,10 @@ const TopNav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
-    console.log(event.currentTarget);
     setAnchorElNav(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
-    console.log(1);
     setAnchorElNav(null);
   };
 
@@ -71,11 +69,11 @@ const TopNav = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+            sx={{ flex:1, mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            <img src={centerLogo} className="App-logo" alt="logo" />
+            <img src={sideLogo} className="App-logo" alt="logo" />
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -90,9 +88,9 @@ const TopNav = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            <img src={sideLogo} className="App-logo" alt="logo" />
+            <img src={centerLogo} className="App-logo" alt="logo" />
           </Typography>
         </Toolbar>
       </Container>
