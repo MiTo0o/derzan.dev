@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    "semi": [2, "always"],
-    "jsx-quotes": ["error", "prefer-double"]
+    semi: [2, "always"],
+    "jsx-quotes": ["error", "prefer-double"],
   },
 };
