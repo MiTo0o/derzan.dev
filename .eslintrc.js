@@ -13,5 +13,8 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react"],
-  rules: {},
+  rules: {
+    "semi": [2, "always"],
+    "jsx-quotes": ["error", "prefer-double"]
+  },
 };
