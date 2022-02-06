@@ -1,24 +1,22 @@
-import * as React from 'react';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import * as React from "react";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import EmailIcon from '@mui/icons-material/Email';
-
+import EmailIcon from "@mui/icons-material/Email";
 
 function Footer() {
-
-  const emailTo = 'derzanchiang1800@gmail.com'
+  const emailTo = "derzanchiang1800@gmail.com";
   const bottomNavigationUrls = {
-    'LinkedIn': 'https://www.linkedin.com/in/derzan/' ,
-    'GitHub': 'https://github.com/MiTo0o',
-    'Email': `mailto:${emailTo}`
-  }
+    LinkedIn: "https://www.linkedin.com/in/derzan/",
+    GitHub: "https://github.com/MiTo0o",
+    Email: `mailto:${emailTo}`,
+  };
   return (
     <BottomNavigation
       showLabels
       onChange={(event, newValue) => {
-        window.open(bottomNavigationUrls[newValue], '_blank');
+        window.open(bottomNavigationUrls[newValue], "_blank");
       }}
       sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
       elevation={3}
@@ -28,8 +26,8 @@ function Footer() {
         value="LinkedIn"
         icon={<LinkedInIcon />}
       />
-      <BottomNavigationAction 
-        label="GitHub" 
+      <BottomNavigationAction
+        label="GitHub"
         value="GitHub"
         icon={<GitHubIcon />}
       />
@@ -40,7 +38,6 @@ function Footer() {
       />
     </BottomNavigation>
   );
-
 }
 
 export default Footer;

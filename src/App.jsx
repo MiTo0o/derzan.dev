@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import './App.css';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import React, { useState } from "react";
+import "./App.css";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import TopNav from './components/TopNav';
-import Title from './components/Title';
-import Footer from './components/Footer';
+import TopNav from "./components/TopNav";
+import Title from "./components/Title";
+import Footer from "./components/Footer";
 // function BaseApp() {
 //   return (
 //   <div className="App">
@@ -17,13 +17,13 @@ function App() {
   const palletType = darkThemeState ? "dark" : "light";
   const darkTheme = createTheme({
     palette: {
-      mode: palletType
-    }
+      mode: palletType,
+    },
   });
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <CssBaseline/>
+      <CssBaseline />
       <div className="box">
         <div className="row header">
           <TopNav
@@ -32,10 +32,10 @@ function App() {
           />
         </div>
         <div className="row content">
-          <Title/>
+          <Title />
         </div>
         <div className="row footer">
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </ThemeProvider>
