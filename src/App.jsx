@@ -18,7 +18,7 @@ function App() {
       <CssBaseline />
       <div className="box">
         <div className="row header">
-          <TopNav/>
+          <TopNav />
         </div>
         <div className="row content">
           <Title />
