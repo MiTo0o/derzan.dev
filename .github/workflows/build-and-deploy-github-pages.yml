@@ -24,7 +24,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          REPOSITORY_NAME: https://github.com/Bobby-The-Builder/derzan.dev
+          REPOSITORY_NAME: Bobby-The-Builder/derzan.dev
           ACCESS_TOKEN: ${{ secrets.DEPLOY_WEBAPP_TOKEN }}
           BRANCH: main # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
