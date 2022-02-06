@@ -9,13 +9,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import ToggleTheme from './ToggleTheme';
 import sideLogo from '../sideLogo.svg';
 import centerLogo from '../centerLogo.svg';
 
 const pages = ['Home', 'About', 'Projects'];
 
-const TopNav = ({darkThemeState, setDarkThemeState}) => {
+const TopNav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -23,8 +22,8 @@ const TopNav = ({darkThemeState, setDarkThemeState}) => {
     setAnchorElNav(event.currentTarget);
   };
 
-
   const handleCloseNavMenu = () => {
+    console.log(1);
     setAnchorElNav(null);
   };
 
@@ -32,15 +31,6 @@ const TopNav = ({darkThemeState, setDarkThemeState}) => {
     <AppBar position="static">
       <Container maxWidth="100%">
         <Toolbar>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-          >
-          <img src={sideLogo} className="App-logo" alt="logo" />
-          </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -83,7 +73,7 @@ const TopNav = ({darkThemeState, setDarkThemeState}) => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-          <img src={centerLogo} className="App-logo" alt="logo" />
+            <img src={centerLogo} className="App-logo" alt="logo" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -96,10 +86,14 @@ const TopNav = ({darkThemeState, setDarkThemeState}) => {
               </Button>
             ))}
           </Box>
-          <ToggleTheme
-            darkThemeState={darkThemeState}
-            setDarkThemeState={setDarkThemeState}
-          />
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+          >
+            <img src={sideLogo} className="App-logo" alt="logo" />
+          </Typography>
         </Toolbar>
       </Container>
     </AppBar>

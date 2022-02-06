@@ -59,11 +59,20 @@ function ToggleTheme({darkThemeState, setDarkThemeState}) {
 
   return (
     <CustomSwitch
-    sx={{ m: 1 }} 
-    checked={darkThemeState} 
+    sx={{ m: 1 }}
+    checked={darkThemeState}
     onChange={handleThemeChange}
     />
   );
 }
+
+{/*
+take in darkThemeState and setDarkThemeState as props
+<ToggleTheme
+  darkThemeState={darkThemeState}
+  setDarkThemeState={setDarkThemeState}
+/>
+
+*/}
 
 export default ToggleTheme;
