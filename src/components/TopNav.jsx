@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import sideLogo from '../sideLogo.svg';
 import centerLogo from '../centerLogo.svg';
 
-const pages = ['Home', 'About', 'Projects'];
+const pages = ['Home', 'Projects'];
 
 const TopNav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
