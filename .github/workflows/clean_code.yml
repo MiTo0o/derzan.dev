@@ -29,23 +29,23 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PRETTY_TOKEN }}
 
-  eslint:
-    name: ESLint
-    needs: prettier
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          # Make sure the actual branch is checked out when running on pull requests
-          ref: ${{ github.head_ref }}
+  # eslint:
+  #   name: ESLint
+  #   needs: prettier
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
+  #       with:
+  #         # Make sure the actual branch is checked out when running on pull requests
+  #         ref: ${{ github.head_ref }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@v1
 
-      - name: Install Node.js dependencies
-        run: npm install
+  #     - name: Install Node.js dependencies
+  #       run: npm install
 
-      - name: Run ESLint
-        working-directory: ./src/
-        run: npx eslint **/*.{js,jsx} --no-error-on-unmatched-pattern
+  #     - name: Run ESLint
+  #       working-directory: ./src/
+  #       run: npx eslint **/*.{js,jsx} --no-error-on-unmatched-pattern
