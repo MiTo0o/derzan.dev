@@ -20,14 +20,14 @@ jobs:
         with:
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PRETTY_TOKEN }}
 
       - name: Prettify code
         uses: creyD/prettier_action@v3.1
         with:
           prettier_options: --write **/*.{tsx,js,ts,md,css,scss,html,json,yml}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PRETTY_TOKEN }}
 
   eslint:
     name: ESLint
