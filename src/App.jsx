@@ -1,23 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import TopNav from "./components/TopNav";
 import Title from "./components/Title";
 import Footer from "./components/Footer";
-// function BaseApp() {
-//   return (
-//   <div className="App">
-//   </div>
-//   );
-// }
 
 function App() {
-  const [darkThemeState, setDarkThemeState] = useState(true);
-  const palletType = darkThemeState ? "dark" : "light";
   const darkTheme = createTheme({
     palette: {
-      mode: palletType,
+      mode: "dark",
     },
   });
 
@@ -26,10 +18,7 @@ function App() {
       <CssBaseline />
       <div className="box">
         <div className="row header">
-          <TopNav
-            darkThemeState={darkThemeState}
-            setDarkThemeState={setDarkThemeState}
-          />
+          <TopNav/>
         </div>
         <div className="row content">
           <Title />
