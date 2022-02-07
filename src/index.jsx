@@ -8,7 +8,6 @@ import "./index.css";
 //import components
 import App from "./App";
 
-
 ReactDOM.render(
   <App />,
 

@@ -1,4 +1,3 @@
-
 // import libraries
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -11,15 +10,14 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 
 function App() {
-  return(
+  return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-  </BrowserRouter>
+    </BrowserRouter>
   );
-
 }
 
 export default App;

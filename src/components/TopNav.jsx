@@ -15,13 +15,13 @@ import { Link } from "react-router-dom";
 
 const pagesAndRoutes = [
   {
-    "page": "Home",
-    "route": "/"
-  }, 
+    page: "Home",
+    route: "/",
+  },
   {
-    "page": "Projects",
-    "route": "/projects"
-  }
+    page: "Projects",
+    route: "/projects",
+  },
 ];
 
 const TopNav = () => {
@@ -69,7 +69,10 @@ const TopNav = () => {
               }}
             >
               {pagesAndRoutes.map((page) => (
-                <Link to={page.route} style={{ textDecoration: 'none', color: 'white'}}>
+                <Link
+                  to={page.route}
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   <MenuItem key={page.page} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page.page}</Typography>
                   </MenuItem>
@@ -87,7 +90,10 @@ const TopNav = () => {
           </Typography>
           <Box sx={{ mr: 2, display: { xs: "none", md: "flex" } }}>
             {pagesAndRoutes.map((page) => (
-              <Link to={page.route} style={{ textDecoration: 'none', color: 'white'}}>
+              <Link
+                to={page.route}
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <Button
                   key={page.page}
                   onClick={handleCloseNavMenu}
