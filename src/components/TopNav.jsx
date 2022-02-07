@@ -21,7 +21,7 @@ const pagesAndRoutes = [
   {
     page: "Projects",
     route: "/projects",
-  },
+  }
 ];
 
 const TopNav = () => {
