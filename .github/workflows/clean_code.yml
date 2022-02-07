@@ -1,17 +1,14 @@
-name: PR Checks
+name: Continuous Integration
 
+# This action works with pull requests and pushes
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [main]
   pull_request:
-    branches: [main]
+  push:
+    branches:
+      - main
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 jobs:
   prettier:
-    name: Prettier
     runs-on: ubuntu-latest
 
     steps:
@@ -20,32 +17,9 @@ jobs:
         with:
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
-          token: ${{ secrets.PRETTY_TOKEN }}
 
       - name: Prettify code
-        uses: creyD/prettier_action@v3.1
+        uses: creyD/prettier_action@v4.2
         with:
-          prettier_options: --write **/*.{jsx,js,md,css,scss,html,json,yml}
-        env:
-          GITHUB_TOKEN: ${{ secrets.PRETTY_TOKEN }}
-
-  # eslint:
-  #   name: ESLint
-  #   needs: prettier
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v2
-  #       with:
-  #         # Make sure the actual branch is checked out when running on pull requests
-  #         ref: ${{ github.head_ref }}
-
-  #     - name: Setup Node.js
-  #       uses: actions/setup-node@v1
-
-  #     - name: Install Node.js dependencies
-  #       run: npm install
-
-  #     - name: Run ESLint
-  #       working-directory: ./src/
-  #       run: npx eslint **/*.{js,jsx} --no-error-on-unmatched-pattern
+          # This part is also where you can pass other options, for example:
+          prettier_options: --write **/*.{js,md,jsx,css}
