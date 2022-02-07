@@ -1,9 +1,9 @@
 import React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import TopNav from "./TopNav";
-import Title from "./Title";
-import Footer from "./Footer";
+import TopNav from "../components/TopNav";
+import Title from "../components/Title";
+import Footer from "../components/Footer";
 
 function Home() {
   const darkTheme = createTheme({

@@ -4,7 +4,7 @@ import React from "react";
 // import styling
 
 //import components
-import TopNav from "./TopNav";
+import TopNav from "../components/TopNav";
 
 function Projects() {
   return <TopNav />;
