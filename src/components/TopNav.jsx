@@ -11,8 +11,18 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import sideLogo from "../sideLogo.svg";
 import centerLogo from "../centerLogo.svg";
+import { Link } from "react-router-dom";
 
-const pages = ["Home", "Projects"];
+const pagesAndRoutes = [
+  {
+    "page": "Home",
+    "route": "/"
+  }, 
+  {
+    "page": "Projects",
+    "route": "/projects"
+  }
+];
 
 const TopNav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -58,10 +68,12 @@ const TopNav = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+              {pagesAndRoutes.map((page) => (
+                <Link to={page.route} style={{ textDecoration: 'none', color: 'white'}}>
+                  <MenuItem key={page.page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page.page}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -74,14 +86,16 @@ const TopNav = () => {
             <img src={sideLogo} className="App-logo" alt="logo" />
           </Typography>
           <Box sx={{ mr: 2, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
+            {pagesAndRoutes.map((page) => (
+              <Link to={page.route} style={{ textDecoration: 'none', color: 'white'}}>
+                <Button
+                  key={page.page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {page.page}
+                </Button>
+              </Link>
             ))}
           </Box>
           <Typography
