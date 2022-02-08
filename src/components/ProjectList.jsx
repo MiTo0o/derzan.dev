@@ -13,7 +13,8 @@ import Container from "@mui/material/Container";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
-import ReactIcon from "./ReactIcon";
+import ReactIcon from "../customMuiSvgIcons/ReactIcon/ReactIcon";
+import MuiIcon from "../customMuiSvgIcons/MuiIcon/MuiIcon";
 
 function ProjectList() {
   return (
@@ -45,15 +46,25 @@ function ProjectList() {
               derzan.dev
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              This website took a decent amount of work to make. My first medium
-              sized react project.This website took a decent amount of work to
-              make. My first medium sized react project.
+              My personal website built mainly using ReactJS and material UI. The website was built with the material design pattern and responsiveness in mind. 
             </Typography>
-            <Button size="small" color="primary" endIcon={<ReactIcon />}>
-              React
+            <Button
+              size="small"
+              color="primary"
+              endIcon={<ReactIcon />}
+              target="_blank"
+              href="https://reactjs.org/"
+            >
+              ReactJS
             </Button>
-            <Button size="small" color="primary">
-              Share
+            <Button
+              size="small"
+              color="primary"
+              endIcon={<MuiIcon />}
+              target="_blank"
+              href="https://mui.com/"
+            >
+              MUI
             </Button>
           </CardContent>
           <CardActions>
@@ -63,7 +74,7 @@ function ProjectList() {
               color="primary"
               endIcon={<GitHubIcon />}
               target="_blank"
-              href="http://www.google.com/"
+              href="https://github.com/MiTo0o/MiTo0o.github.io"
             >
               Source
             </Button>
@@ -73,8 +84,10 @@ function ProjectList() {
               color="primary"
               target="_blank"
               endIcon={<VisibilityIcon />}
+              target="_blank"
+              href="https://derzan.dev/"
             >
-              Demo
+              Live
             </Button>
           </CardActions>
         </Card>
