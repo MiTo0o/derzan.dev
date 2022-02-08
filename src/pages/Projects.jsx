@@ -9,7 +9,6 @@ import TopNav from "../components/TopNav";
 import ProjectList from "../components/ProjectList";
 
 function Projects() {
-
   const darkTheme = createTheme({
     palette: {
       mode: "dark",
@@ -21,7 +20,7 @@ function Projects() {
       <TopNav />
       <ProjectList />
     </ThemeProvider>
-  )
+  );
 }
 
 export default Projects;
