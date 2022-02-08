@@ -46,7 +46,9 @@ function ProjectList() {
               derzan.dev
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              My personal website built mainly using ReactJS and material UI. The website was built with the material design pattern and responsiveness in mind. 
+              My personal website built mainly using ReactJS and material UI.
+              The website was built with the material design pattern and
+              responsiveness in mind.
             </Typography>
             <Button
               size="small"
