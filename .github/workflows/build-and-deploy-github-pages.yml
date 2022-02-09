@@ -24,7 +24,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          REPOSITORY_NAME: https://github.com/MiTo0o/MiTo0o.github.io
+          REPOSITORY_NAME: MiTo0o/MiTo0o.github.io
           ACCESS_TOKEN: ${{ secrets.DEPLOY_WEBAPP_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
