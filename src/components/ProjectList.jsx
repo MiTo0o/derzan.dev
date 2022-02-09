@@ -37,14 +37,13 @@ function ProjectList() {
           }}
         >
           <CardMedia
-          
             style={{
-              height: 240,     // as an example I am modifying width and height
-              width: '100%',
-              marginLeft: '0%'
+              height: 240, // as an example I am modifying width and height
+              width: "100%",
+              marginLeft: "0%",
             }}
             // have to use require for private/local path (webpack)
-            image={require('./mockuper.png')}
+            image={require("./mockuper.png")}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
