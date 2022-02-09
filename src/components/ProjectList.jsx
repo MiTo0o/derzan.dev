@@ -31,15 +31,20 @@ function ProjectList() {
       </Typography>
       <Box my={4}>
         <Card
+          variant="outlined"
           style={{
-            maxWidth: 700,
+            maxWidth: 500,
           }}
         >
           <CardMedia
+          
             style={{
-              height: 150,
+              height: 240,     // as an example I am modifying width and height
+              width: '100%',
+              marginLeft: '0%'
             }}
-            image="https://www.thesprucepets.com/thmb/sfuyyLvyUx636_Oq3Fw5_mt-PIc=/3760x2820/smart/filters:no_upscale()/adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe.jpg"
+            // have to use require for private/local path (webpack)
+            image={require('./mockuper.png')}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">

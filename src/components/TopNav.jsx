@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import sideLogo from "../sideLogo.svg";
 import centerLogo from "../centerLogo.svg";
 import { Link } from "react-router-dom";
+import resumePDF from './Derzan-Chiang-Resume2022.pdf';
 
 const pagesAndRoutes = [
   {

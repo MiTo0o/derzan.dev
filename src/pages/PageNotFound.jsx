@@ -39,7 +39,7 @@ function PageNotFound() {
         <br />
         {/* sx={{ fontSize: 100 }} */}
         <IconButton href="/">
-          <CottageIcon sx={{ fontSize: 100 }} />
+          <CottageIcon sx={{ fontSize: 120 }} />
         </IconButton>
         {/* <Typography sx={{ fontSize: 40 }}>
           It's getting cold, let's get you home.
