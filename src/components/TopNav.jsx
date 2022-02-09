@@ -12,8 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import sideLogo from "../sideLogo.svg";
 import centerLogo from "../centerLogo.svg";
 import { Link } from "react-router-dom";
-import resumePDF from "./Derzan-Chiang-Resume2022.pdf";
-
+import ResumePDF from './Derzan-Chiang-Resume2022.pdf';
 const pagesAndRoutes = [
   {
     page: "Home",
@@ -79,6 +78,11 @@ const TopNav = () => {
                   </MenuItem>
                 </Link>
               ))}
+              <a target="_blank" href={ResumePDF} rel='noopener noreferrer' style={{textDecoration: "none", color: 'white'}}>
+                <MenuItem key={"resume"} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Resume</Typography>
+                </MenuItem>
+              </a>
             </Menu>
           </Box>
           <Typography
@@ -104,6 +108,15 @@ const TopNav = () => {
                 </Button>
               </Link>
             ))}
+            <a target="_blank" href={ResumePDF} rel='noopener noreferrer' style={{textDecoration: "none"}}>
+              <Button
+                key={'resumw'}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block", textDecoration: "none"}}
+              >
+                Resume
+              </Button>
+            </a>
           </Box>
           <Typography
             variant="h6"
