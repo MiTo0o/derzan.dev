@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import sideLogo from "../sideLogo.svg";
 import centerLogo from "../centerLogo.svg";
 import { Link } from "react-router-dom";
-import ResumePDF from './Derzan-Chiang-Resume2022.pdf';
+import ResumePDF from "./Derzan-Chiang-Resume2022.pdf";
 const pagesAndRoutes = [
   {
     page: "Home",
@@ -78,7 +78,12 @@ const TopNav = () => {
                   </MenuItem>
                 </Link>
               ))}
-              <a target="_blank" href={ResumePDF} rel='noopener noreferrer' style={{textDecoration: "none", color: 'white'}}>
+              <a
+                target="_blank"
+                href={ResumePDF}
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <MenuItem key={"resume"} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">Resume</Typography>
                 </MenuItem>
@@ -108,11 +113,21 @@ const TopNav = () => {
                 </Button>
               </Link>
             ))}
-            <a target="_blank" href={ResumePDF} rel='noopener noreferrer' style={{textDecoration: "none"}}>
+            <a
+              target="_blank"
+              href={ResumePDF}
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
               <Button
-                key={'resumw'}
+                key={"resumw"}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block", textDecoration: "none"}}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  textDecoration: "none",
+                }}
               >
                 Resume
               </Button>
