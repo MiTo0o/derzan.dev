@@ -3,7 +3,6 @@ import * as React from "react";
 import titleLogo from "../title.svg";
 import Grid from "@mui/material/Grid";
 import Typed from "react-typed";
-import { fontSize } from "@mui/system";
 
 function Title() {
   return (
