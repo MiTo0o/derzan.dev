@@ -25,6 +25,7 @@ function BigCard() {
       variant="outlined"
       style={{
         maxWidth: 600,
+        backgroundColor: "#0E0D0D",
       }}
     >
       <CardMedia
@@ -38,7 +39,7 @@ function BigCard() {
         <Typography gutterBottom variant="h5" component="h2">
           derzan.dev
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" color="textSecondary" component="p" sx={{ mb: 1 }}>
           My personal website built mainly using ReactJS and material UI. The
           website was built with the material design pattern and responsiveness
           in mind.
@@ -92,10 +93,10 @@ function BigCard() {
 function ProjectList() {
   return (
     <>
-      <Typography variant="h3" paragraph style={{ textAlign: "center" }}>
+      <Typography variant="h3" paragraph style={{ textAlign: "center" }} sx={{my: 4}}>
         Projects
       </Typography>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={2} justifyContent="center" spacing={2}>
         {/* From 0 to 600px wide (smart-phones), I take up 12 columns, or the whole device width!
         From 600-690px wide (tablets), I take up 6 out of 12 columns, so 2 columns fit the screen.
         From 960px wide and above, I take up 25% of the device (4/12), so 3 columns fit the screen. */}
