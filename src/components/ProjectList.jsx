@@ -19,7 +19,6 @@ import MuiIcon from "../customMuiSvgIcons/MuiIcon/MuiIcon";
 // always import images as components, I struggled for a long time beacuse of this
 import derzanDevMockUp from "./mockuper.png";
 
-
 function ProjectList() {
   return (
     <Container
@@ -42,9 +41,9 @@ function ProjectList() {
         >
           <CardMedia
             style={{
-              height: '100%' // as an example I am modifying width and height
+              height: "100%", // as an example I am modifying width and height
             }}
-            component='img'
+            component="img"
             // have to use require for private/local path (webpack)
             image={derzanDevMockUp}
           />
