@@ -9,17 +9,54 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import Grid from "@mui/material/Grid";
-import ReactIcon from "../customMuiSvgIcons/ReactIcon/ReactIcon";
-import MuiIcon from "../customMuiSvgIcons/MuiIcon/MuiIcon";
+import ReactIcon from "./customMuiSvgIcons/ReactIcon/ReactIcon";
+import MuiIcon from "./customMuiSvgIcons/MuiIcon/MuiIcon";
 
 // always import images as components, I struggled for a long time beacuse of this
 import derzanDevMockUp from "./mockuper.png";
+import ProjectCard from "./ProjectCard";
+import data from '../data/projects';
+import { BookOnlineOutlined } from "@mui/icons-material";
 
+// https://github.com/webpack/webpack/issues/6680
+function isMuiBuiltIn(link) {
+  return (link.includes('@mui'));
+}
+const projectData = {
+  title: 'derzan.dev',
+  description: 'My personal website built mainly using ReactJS and material UI. The' +
+  'website was built with the material design pattern and responsiveness in mind.',
+  imgUrl: './mockuper.png',
+  technologies: [
+    {
+      name: 'ReactJS',
+      url: 'https://reactjs.org/',
+      customIconLink: './customMuiSvgIcons/ReactIcon/ReactIcon'
+    },
+    {
+      name: 'Mui',
+      url: 'https://mui.com/',
+      customIconLink: './customMuiSvgIcons/MuiIcon/MuiIcon'
+    }
+  ],
+  actions: [
+    {
+      name: 'Source',
+      url: 'https://github.com/MiTo0o/derzan.dev',
+      muiIconLink: '@mui/icons-material/GitHub'
+    },
+    {
+      name: 'Live',
+      url: 'https://derzan.dev/',
+      muiIconLink: '@mui/icons-material/Visibility'
+    }
+  ]
+}
 function BigCard() {
+  const boi = './mockuper';
   return (
     <Card
       variant="outlined"
@@ -33,7 +70,7 @@ function BigCard() {
           height: "100%",
         }}
         component="img"
-        image={derzanDevMockUp}
+        image={isMuiBuiltIn(projectData.imgUrl) ? require('@mui' + projectData.imgUrl.slice(4)) : require('./' + projectData.imgUrl.slice(2))}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
@@ -102,6 +139,9 @@ function ProjectList() {
         From 960px wide and above, I take up 25% of the device (4/12), so 3 columns fit the screen. */}
         <Grid item xs={12} sm={6} md={4}>
           <BigCard />
+          {/* {data.map((project) => (
+            <ProjectCard projectData={project}/>
+          ))} */}
         </Grid>
       </Grid>
     </>

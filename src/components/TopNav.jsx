@@ -72,6 +72,7 @@ const TopNav = () => {
                 <Link
                   to={page.route}
                   style={{ textDecoration: "none", color: "white" }}
+                  key={page.route}
                 >
                   <MenuItem key={page.page} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page.page}</Typography>
@@ -103,6 +104,7 @@ const TopNav = () => {
               <Link
                 to={page.route}
                 style={{ textDecoration: "none", color: "white" }}
+                key={page.route}
               >
                 <Button
                   key={page.page}
@@ -120,7 +122,7 @@ const TopNav = () => {
               style={{ textDecoration: "none" }}
             >
               <Button
-                key={"resumw"}
+                key={"resume"}
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
