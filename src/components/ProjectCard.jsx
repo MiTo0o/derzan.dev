@@ -13,7 +13,6 @@ import Typography from "@mui/material/Typography";
 // always import images as components, I struggled for a long time beacuse of this
 import derzanDevMockUp from "./mockuper.png";
 
-
 // according to https://github.com/webpack/webpack/issues/6680
 // you cannot do something like:
 
@@ -28,11 +27,11 @@ import derzanDevMockUp from "./mockuper.png";
 // i cri ;(
 
 function isMuiBuiltIn(link) {
-  return (link.includes('@mui'));
+  return link.includes("@mui");
 }
 
 function ProjectCard({ projectData }) {
-  return(
+  return (
     <Card
       variant="outlined"
       style={{
@@ -45,14 +44,19 @@ function ProjectCard({ projectData }) {
           height: "100%",
         }}
         component="img"
-        // REMEBER TO CHANGE ./ to whatever your path is and change 
-        image={require('./' + projectData.imgUrl.slice(2))}
+        // REMEBER TO CHANGE ./ to whatever your path is and change
+        image={require("./" + projectData.imgUrl.slice(2))}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
           {projectData.title}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p" sx={{ mb: 1 }}>
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          component="p"
+          sx={{ mb: 1 }}
+        >
           {projectData.description}
         </Typography>
         {projectData.technologies.map((technology) => (
@@ -79,10 +83,10 @@ function ProjectCard({ projectData }) {
           >
             {action.name}
           </Button>
-        ))};
-
+        ))}
+        ;
       </CardActions>
     </Card>
-  )
+  );
 }
 export default ProjectCard;

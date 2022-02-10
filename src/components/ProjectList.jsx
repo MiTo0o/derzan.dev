@@ -18,45 +18,46 @@ import MuiIcon from "./customMuiSvgIcons/MuiIcon/MuiIcon";
 // always import images as components, I struggled for a long time beacuse of this
 import derzanDevMockUp from "./mockuper.png";
 import ProjectCard from "./ProjectCard";
-import data from '../data/projects';
+import data from "../data/projects";
 import { BookOnlineOutlined } from "@mui/icons-material";
 
 // https://github.com/webpack/webpack/issues/6680
 function isMuiBuiltIn(link) {
-  return (link.includes('@mui'));
+  return link.includes("@mui");
 }
 const projectData = {
-  title: 'derzan.dev',
-  description: 'My personal website built mainly using ReactJS and material UI. The' +
-  'website was built with the material design pattern and responsiveness in mind.',
-  imgUrl: './mockuper.png',
+  title: "derzan.dev",
+  description:
+    "My personal website built mainly using ReactJS and material UI. The" +
+    "website was built with the material design pattern and responsiveness in mind.",
+  imgUrl: "./mockuper.png",
   technologies: [
     {
-      name: 'ReactJS',
-      url: 'https://reactjs.org/',
-      customIconLink: './customMuiSvgIcons/ReactIcon/ReactIcon'
+      name: "ReactJS",
+      url: "https://reactjs.org/",
+      customIconLink: "./customMuiSvgIcons/ReactIcon/ReactIcon",
     },
     {
-      name: 'Mui',
-      url: 'https://mui.com/',
-      customIconLink: './customMuiSvgIcons/MuiIcon/MuiIcon'
-    }
+      name: "Mui",
+      url: "https://mui.com/",
+      customIconLink: "./customMuiSvgIcons/MuiIcon/MuiIcon",
+    },
   ],
   actions: [
     {
-      name: 'Source',
-      url: 'https://github.com/MiTo0o/derzan.dev',
-      muiIconLink: '@mui/icons-material/GitHub'
+      name: "Source",
+      url: "https://github.com/MiTo0o/derzan.dev",
+      muiIconLink: "@mui/icons-material/GitHub",
     },
     {
-      name: 'Live',
-      url: 'https://derzan.dev/',
-      muiIconLink: '@mui/icons-material/Visibility'
-    }
-  ]
-}
+      name: "Live",
+      url: "https://derzan.dev/",
+      muiIconLink: "@mui/icons-material/Visibility",
+    },
+  ],
+};
 function BigCard() {
-  const boi = './mockuper';
+  const boi = "./mockuper";
   return (
     <Card
       variant="outlined"
@@ -70,13 +71,22 @@ function BigCard() {
           height: "100%",
         }}
         component="img"
-        image={isMuiBuiltIn(projectData.imgUrl) ? require('@mui' + projectData.imgUrl.slice(4)) : require('./' + projectData.imgUrl.slice(2))}
+        image={
+          isMuiBuiltIn(projectData.imgUrl)
+            ? require("@mui" + projectData.imgUrl.slice(4))
+            : require("./" + projectData.imgUrl.slice(2))
+        }
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
           derzan.dev
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p" sx={{ mb: 1 }}>
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          component="p"
+          sx={{ mb: 1 }}
+        >
           My personal website built mainly using ReactJS and material UI. The
           website was built with the material design pattern and responsiveness
           in mind.
@@ -130,7 +140,12 @@ function BigCard() {
 function ProjectList() {
   return (
     <>
-      <Typography variant="h3" paragraph style={{ textAlign: "center" }} sx={{my: 4}}>
+      <Typography
+        variant="h3"
+        paragraph
+        style={{ textAlign: "center" }}
+        sx={{ my: 4 }}
+      >
         Projects
       </Typography>
       <Grid container spacing={2} justifyContent="center" spacing={2}>
