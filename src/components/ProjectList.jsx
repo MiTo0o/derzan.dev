@@ -36,7 +36,7 @@ function ProjectList() {
         <Card
           variant="outlined"
           style={{
-            maxWidth: 345,
+            maxWidth: 500,
           }}
         >
           <CardMedia
