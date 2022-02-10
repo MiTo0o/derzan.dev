@@ -16,6 +16,10 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import ReactIcon from "../customMuiSvgIcons/ReactIcon/ReactIcon";
 import MuiIcon from "../customMuiSvgIcons/MuiIcon/MuiIcon";
 
+// always import images as components, I struggled for a long time beacuse of this
+import derzanDevMockUp from "./mockuper.png";
+
+
 function ProjectList() {
   return (
     <Container
@@ -33,17 +37,16 @@ function ProjectList() {
         <Card
           variant="outlined"
           style={{
-            maxWidth: 500,
+            maxWidth: 345,
           }}
         >
           <CardMedia
             style={{
-              height: 240, // as an example I am modifying width and height
-              width: "100%",
-              marginLeft: "0%",
+              height: '100%' // as an example I am modifying width and height
             }}
+            component='img'
             // have to use require for private/local path (webpack)
-            image={require("./mockuper.png")}
+            image={derzanDevMockUp}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
