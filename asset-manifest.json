@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.67d31a51.js",
-    "static/media/mockuper.png": "/static/media/mockuper.2ea7091d19c2f83d2da8.png",
+    "main.js": "/static/js/main.32ed3c29.js",
+    "static/media/mockuper.png": "/static/media/mockuper.22271d3a51c89b2e5969.png",
     "static/media/Derzan-Chiang-Resume2022.pdf": "/static/media/Derzan-Chiang-Resume2022.267e8605ab5aa41a57c4.pdf",
     "static/media/title.svg": "/static/media/title.254d1f1b8e6b6f4933e8c49a8404c8aa.svg",
     "static/media/sideLogo.svg": "/static/media/sideLogo.337139214c4c4711e09c7e0e9b4879ee.svg",
@@ -10,10 +10,10 @@
     "static/media/react-icon.svg": "/static/media/react-icon.a8c7b24d60f6f3d1799c06eba38c4cee.svg",
     "static/media/mui-icon.svg": "/static/media/mui-icon.fab4e70b71b046796bcf505701bb2b9b.svg",
     "index.html": "/index.html",
-    "main.67d31a51.js.map": "/static/js/main.67d31a51.js.map"
+    "main.32ed3c29.js.map": "/static/js/main.32ed3c29.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.67d31a51.js"
+    "static/js/main.32ed3c29.js"
   ]
 }
