@@ -108,7 +108,7 @@ function ProjectCard({ projectData }) {
           ))}
         </CardContent>
         <CardActions>
-          {projectData.technologies.map((action) => (
+          {projectData.actions.map((action) => (
             <Button
               variant="outlined"
               size="small"
