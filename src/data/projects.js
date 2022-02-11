@@ -6,32 +6,32 @@ const data = [
     description:
       "My personal website built mainly using ReactJS and material UI. The" +
       "website was built with the material design pattern and responsiveness in mind.",
-    imgUrl: "./mockuper.png",
+    imgName: "derzanDevMockUp",
     technologies: [
       {
         name: "ReactJS",
         url: "https://reactjs.org/",
-        customIconLink: "./customMuiSvgIcons/ReactIcon/ReactIcon",
+        iconName: "ReactIcon",
       },
       {
         name: "Mui",
         url: "https://mui.com/",
-        customIconLink: "./customMuiSvgIcons/MuiIcon/MuiIcon",
+        iconName: "MuiIcon",
       },
     ],
     actions: [
       {
         name: "Source",
         url: "https://github.com/MiTo0o/derzan.dev",
-        muiIconLink: "@mui/icons-material/GitHub",
+        iconName: "GitHubIcon",
       },
       {
         name: "Live",
         url: "https://derzan.dev/",
-        muiIconLink: "@mui/icons-material/Visibility",
+        iconName: "VisibilityIcon",
       },
     ],
-  },
+  }
 ];
 
 export default data;
