@@ -2,7 +2,6 @@
 import React from "react";
 
 // --- Material Ui Imports --- //
-import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -13,11 +12,11 @@ import Grid from "@mui/material/Grid";
 // always import images as components, I struggled for a long time beacuse of this
 
 // markups
-import derzanDevMockUp from "./mockuper.png";
+import derzanDevMockUp from "../../assets/mockups/derzan-dev-mockup.png";
 
 // custom icons
-import MuiIcon from "./customMuiSvgIcons/MuiIcon/MuiIcon";
-import ReactIcon from "./customMuiSvgIcons/ReactIcon/ReactIcon";
+import MuiIcon from "../customMuiSvgIcons/MuiIcon/MuiIcon";
+import ReactIcon from "../customMuiSvgIcons/ReactIcon/ReactIcon";
 
 // mui built in icons
 import GitHubIcon from "@mui/icons-material/GitHub";

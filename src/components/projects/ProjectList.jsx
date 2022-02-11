@@ -7,7 +7,7 @@ import Grid from "@mui/material/Grid";
 
 // always import images as components, I struggled for a long time beacuse of this
 import ProjectCard from "./ProjectCard";
-import data from "../data/projects";
+import data from "../../assets/projects";
 
 function ProjectList() {
   return (

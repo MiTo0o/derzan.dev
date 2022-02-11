@@ -6,7 +6,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 //import components
 import TopNav from "../components/TopNav";
-import ProjectList from "../components/ProjectList";
+import ProjectList from "../components/projects/ProjectList";
 
 function Projects() {
   const darkTheme = createTheme({
