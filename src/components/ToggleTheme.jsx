@@ -2,6 +2,7 @@ import React from "react";
 import Switch from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
 
+// currently not used, doesn't get bundled for production so it's not a big deal
 const CustomSwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,

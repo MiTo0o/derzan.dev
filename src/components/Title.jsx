@@ -1,6 +1,6 @@
 // import Box from '@mui/material/Box';
 import * as React from "react";
-import titleLogo from "../title.svg";
+import titleLogo from "../assets/images/title.svg";
 import Grid from "@mui/material/Grid";
 import Typed from "react-typed";
 

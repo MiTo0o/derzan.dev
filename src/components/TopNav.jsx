@@ -9,8 +9,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import sideLogo from "../sideLogo.svg";
-import centerLogo from "../centerLogo.svg";
+
+import sideLogo from "../assets/images/sideLogo.svg";
+import centerLogo from "../assets/images/centerLogo.svg";
 import { Link } from "react-router-dom";
 
 import ResumePDF from "../assets/Derzan-Chiang-Resume2022.pdf";
