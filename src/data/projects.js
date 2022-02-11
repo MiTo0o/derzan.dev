@@ -31,7 +31,7 @@ const data = [
         iconName: "VisibilityIcon",
       },
     ],
-  }
+  },
 ];
 
 export default data;

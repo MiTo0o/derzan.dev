@@ -22,8 +22,8 @@ import ReactIcon from "./customMuiSvgIcons/ReactIcon/ReactIcon";
 // mui built in icons
 import GitHubIcon from "@mui/icons-material/GitHub";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import ArticleIcon from '@mui/icons-material/Article';
-import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
+import ArticleIcon from "@mui/icons-material/Article";
+import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
 import { BookOnlineOutlined } from "@mui/icons-material";
 
 // according to https://github.com/webpack/webpack/issues/6680
@@ -40,25 +40,33 @@ import { BookOnlineOutlined } from "@mui/icons-material";
 // i cri ;(
 
 // make sure to import everything including images
-function returnCorrectIconOrImage( iconOrImageName ) {
+function returnCorrectIconOrImage(iconOrImageName) {
   switch (iconOrImageName) {
     // casses for images (png, jps, svg)
-    case "derzanDevMockUp": return derzanDevMockUp;
+    case "derzanDevMockUp":
+      return derzanDevMockUp;
     // casses for cutom icons
-    case "MuiIcon": return <MuiIcon />
-    case "ReactIcon": return <ReactIcon />
+    case "MuiIcon":
+      return <MuiIcon />;
+    case "ReactIcon":
+      return <ReactIcon />;
     // casses for mui built in icons
-    case "GitHubIcon": return <GitHubIcon />
-    case "VisibilityIcon": return <VisibilityIcon />
+    case "GitHubIcon":
+      return <GitHubIcon />;
+    case "VisibilityIcon":
+      return <VisibilityIcon />;
 
-    default: return <CatchingPokemonIcon/>
+    default:
+      return <CatchingPokemonIcon />;
   }
 }
 
 function ProjectCard({ projectData }) {
-  {/* From 0 to 600px wide (smart-phones), I take up 12 columns, or the whole device width!
+  {
+    /* From 0 to 600px wide (smart-phones), I take up 12 columns, or the whole device width!
   From 600-690px wide (tablets), I take up 6 out of 12 columns, so 2 columns fit the screen.
-  From 960px wide and above, I take up 25% of the device (4/12), so 3 columns fit the screen. */}
+  From 960px wide and above, I take up 25% of the device (4/12), so 3 columns fit the screen. */
+  }
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Card

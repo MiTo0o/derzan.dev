@@ -7,7 +7,7 @@ import Grid from "@mui/material/Grid";
 
 // always import images as components, I struggled for a long time beacuse of this
 import ProjectCard from "./ProjectCard";
-import data from '../data/projects'
+import data from "../data/projects";
 
 function ProjectList() {
   return (
@@ -22,7 +22,7 @@ function ProjectList() {
       </Typography>
       <Grid container spacing={2} justifyContent="center" spacing={2}>
         {data.map((project) => (
-          <ProjectCard projectData={project}/>
+          <ProjectCard projectData={project} />
         ))}
       </Grid>
     </>
