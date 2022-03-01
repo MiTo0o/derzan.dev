@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.3a8cc2b9.js",
+    "main.js": "/static/js/main.4a8ef48d.js",
     "static/media/derzan-dev-mockup.png": "/static/media/derzan-dev-mockup.22271d3a51c89b2e5969.png",
     "static/media/Derzan-Chiang-Resume2022.pdf": "/static/media/Derzan-Chiang-Resume2022.267e8605ab5aa41a57c4.pdf",
     "static/media/title.svg": "/static/media/title.254d1f1b8e6b6f4933e8c49a8404c8aa.svg",
@@ -10,10 +10,10 @@
     "static/media/react-icon.svg": "/static/media/react-icon.a8c7b24d60f6f3d1799c06eba38c4cee.svg",
     "index.html": "/index.html",
     "static/media/mui-icon.svg": "/static/media/mui-icon.fab4e70b71b046796bcf505701bb2b9b.svg",
-    "main.3a8cc2b9.js.map": "/static/js/main.3a8cc2b9.js.map"
+    "main.4a8ef48d.js.map": "/static/js/main.4a8ef48d.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.3a8cc2b9.js"
+    "static/js/main.4a8ef48d.js"
   ]
 }
