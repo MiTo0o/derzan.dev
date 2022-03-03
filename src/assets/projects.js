@@ -4,7 +4,7 @@ const data = [
   {
     title: "derzan.dev",
     description:
-      "My personal website built mainly using ReactJS and material UI. The" +
+      "My personal website built mainly using ReactJS and material UI. The " +
       "website was built with the material design pattern and responsiveness in mind.",
     imgName: "derzanDevMockUp",
     technologies: [
