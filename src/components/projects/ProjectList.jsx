@@ -20,7 +20,7 @@ function ProjectList() {
       >
         Projects
       </Typography>
-      <Grid container spacing={2} justifyContent="center" spacing={2}>
+      <Grid container spacing={2} justifyContent="center">
         {data.map((project) => (
           <ProjectCard projectData={project} />
         ))}
