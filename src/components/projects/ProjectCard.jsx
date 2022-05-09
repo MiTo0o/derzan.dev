@@ -13,10 +13,18 @@ import Grid from "@mui/material/Grid";
 
 // markups
 import derzanDevMockUp from "../../assets/mockups/derzan-dev-mockup.png";
+import doggosMockup from "../../assets/mockups/doggos-mockup.png";
 
 // custom icons
-import MuiIcon from "../customMuiSvgIcons/MuiIcon/MuiIcon";
-import ReactIcon from "../customMuiSvgIcons/ReactIcon/ReactIcon";
+import SharpIcon from "../customMuiSvgIcons/SharpIcon/SharpIcon";
+
+// react icons
+import { 
+  SiMaterialui, 
+  SiReact 
+} from 'react-icons/si';
+
+import { FaSass } from 'react-icons/fa';
 
 // mui built in icons
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -41,14 +49,26 @@ import { BookOnlineOutlined } from "@mui/icons-material";
 // make sure to import everything including images
 function returnCorrectIconOrImage(iconOrImageName) {
   switch (iconOrImageName) {
+
     // casses for images (png, jps, svg)
     case "derzanDevMockUp":
       return derzanDevMockUp;
-    // casses for cutom icons
+    case "doggosMockup":
+      return doggosMockup;
+
+    // casses for custom icons
+
+    case "SharpIcon":
+      return <SharpIcon />;
+
+    // react-icons
     case "MuiIcon":
-      return <MuiIcon />;
+      return <SiMaterialui />;
     case "ReactIcon":
-      return <ReactIcon />;
+      return <SiReact />;
+    case "SassIcon":
+      return <FaSass />;
+
     // casses for mui built in icons
     case "GitHubIcon":
       return <GitHubIcon />;
@@ -83,10 +103,15 @@ function ProjectCard({ projectData }) {
           image={returnCorrectIconOrImage(projectData.imgName)}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography 
+            variant="h5" 
+            component="h2"
+            style={{ marginBottom: "10px" }}
+          >
             {projectData.title}
           </Typography>
           <Typography
+            gutterBottom
             variant="body2"
             color="textSecondary"
             component="p"
