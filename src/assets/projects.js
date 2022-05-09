@@ -35,7 +35,7 @@ const data = [
   {
     title: "Doggos",
     description:
-      "A dog photo gallery website built using Sass, ReactJS, MUI. " + 
+      "A dog photo gallery website built using Sass, ReactJS, MUI. " +
       "Hosted using github pages and Google Domains. " +
       "Photos have been compressed, resized, and converted to WebP format for quicker gallery load time.",
     imgName: "doggosMockup",
@@ -73,7 +73,7 @@ const data = [
         iconName: "VisibilityIcon",
       },
     ],
-  }
+  },
 ];
 
 export default data;

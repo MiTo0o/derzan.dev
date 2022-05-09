@@ -19,12 +19,9 @@ import doggosMockup from "../../assets/mockups/doggos-mockup.png";
 import SharpIcon from "../customMuiSvgIcons/SharpIcon/SharpIcon";
 
 // react icons
-import { 
-  SiMaterialui, 
-  SiReact 
-} from 'react-icons/si';
+import { SiMaterialui, SiReact } from "react-icons/si";
 
-import { FaSass } from 'react-icons/fa';
+import { FaSass } from "react-icons/fa";
 
 // mui built in icons
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -49,7 +46,6 @@ import { BookOnlineOutlined } from "@mui/icons-material";
 // make sure to import everything including images
 function returnCorrectIconOrImage(iconOrImageName) {
   switch (iconOrImageName) {
-
     // casses for images (png, jps, svg)
     case "derzanDevMockUp":
       return derzanDevMockUp;
@@ -103,8 +99,8 @@ function ProjectCard({ projectData }) {
           image={returnCorrectIconOrImage(projectData.imgName)}
         />
         <CardContent>
-          <Typography 
-            variant="h5" 
+          <Typography
+            variant="h5"
             component="h2"
             style={{ marginBottom: "10px" }}
           >
