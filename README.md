@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="https://derzan.dev">
+    <img alt="Blog" src="https://raw.githubusercontent.com/MiTo0o/MiTo0o.github.io/main/public/android-chrome-512x512.png" width="64" />
+  </a>
+</p>
+<h1 align="center">
+  My Personal Website
+</h1>
+
 # [derzan.dev](https://derzan.dev/)
 
 Source code for my personal website: [https://derzan.dev/](https://derzan.dev/)
