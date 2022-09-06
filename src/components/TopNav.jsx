@@ -81,7 +81,16 @@ const TopNav = () => {
                   </MenuItem>
                 </Link>
               ))}
-
+              <a
+                target="_blank"
+                href="https://blog.derzan.dev/"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <MenuItem key={"blog"} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Blog</Typography>
+                </MenuItem>
+              </a>
               <a
                 target="_blank"
                 href={ResumePDF}
@@ -118,6 +127,25 @@ const TopNav = () => {
                 </Button>
               </Link>
             ))}
+            <a
+              target="_blank"
+              href="https://blog.derzan.dev/"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              <Button
+                key={"blog"}
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  textDecoration: "none",
+                }}
+              >
+                Blog
+              </Button>
+            </a>
             <a
               target="_blank"
               href={ResumePDF}
