@@ -14,7 +14,6 @@ import sideLogo from "../assets/images/sideLogo.svg";
 import centerLogo from "../assets/images/centerLogo.svg";
 import { Link } from "react-router-dom";
 
-import ResumePDF from "../assets/Derzan-Chiang-Resume2022.pdf";
 const pagesAndRoutes = [
   {
     page: "Home",
@@ -93,7 +92,7 @@ const TopNav = () => {
               </a>
               <a
                 target="_blank"
-                href={ResumePDF}
+                href={`${process.env.PUBLIC_URL}/resume.pdf`}
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none", color: "white" }}
               >
@@ -148,7 +147,7 @@ const TopNav = () => {
             </a>
             <a
               target="_blank"
-              href={ResumePDF}
+              href={`${process.env.PUBLIC_URL}/resume.pdf`}
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
