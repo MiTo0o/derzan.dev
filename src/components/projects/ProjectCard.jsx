@@ -46,13 +46,13 @@ import { BookOnlineOutlined } from "@mui/icons-material";
 // make sure to import everything including images
 function returnCorrectIconOrImage(iconOrImageName) {
   switch (iconOrImageName) {
-    // casses for images (png, jps, svg)
+    // cases for images (png, jps, svg)
     case "derzanDevMockUp":
       return derzanDevMockUp;
     case "doggosMockup":
       return doggosMockup;
 
-    // casses for custom icons
+    // cases for custom icons
 
     case "SharpIcon":
       return <SharpIcon />;
