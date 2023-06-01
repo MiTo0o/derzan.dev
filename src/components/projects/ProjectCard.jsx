@@ -14,6 +14,7 @@ import Grid from "@mui/material/Grid";
 // markups
 import derzanDevMockUp from "../../assets/mockups/derzan-dev-mockup.png";
 import doggosMockup from "../../assets/mockups/doggos-mockup.png";
+import lichessMockup from "../../assets/mockups/lichess-bot-mockup.png";
 
 // custom icons
 import SharpIcon from "../customMuiSvgIcons/SharpIcon/SharpIcon";
@@ -51,6 +52,8 @@ function returnCorrectIconOrImage(iconOrImageName) {
       return derzanDevMockUp;
     case "doggosMockup":
       return doggosMockup;
+    case "lichessMockup":
+      return lichessMockup;
 
     // cases for custom icons
 
