@@ -78,7 +78,7 @@ const data = [
     title: "Lichess Daily Puzzle Discord Bot",
     description:
       "Developed a Discord bot in TypeScript that serves daily chess puzzles" +
-      "to a community of 3500+ users across 15+ channels. The bot includes personalized scheduling, " + 
+      "to a community of 3500+ users across 15+ channels. The bot includes personalized scheduling, " +
       "real-time error monitoring via Sentry.io, and smooth deployment using Docker on Fly.io. " +
       "It's all about keeping the chess puzzles coming, hassle-free.",
     imgName: "lichessMockup",
@@ -103,7 +103,6 @@ const data = [
         url: "https://fly.io/",
         iconName: "FlyIcon",
       },
-
     ],
     actions: [
       {
