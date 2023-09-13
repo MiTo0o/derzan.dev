@@ -77,7 +77,7 @@ function returnCorrectIconOrImage(iconOrImageName) {
       return <FaFly />;
     case "TypescriptIcon":
       return <SiTypescript />;
-      
+
     // casses for mui built in icons
     case "GitHubIcon":
       return <GitHubIcon />;
