@@ -77,31 +77,33 @@ const data = [
   {
     title: "Lichess Daily Puzzle Discord Bot",
     description:
-      "A dog photo gallery website built using Sass, ReactJS, MUI. " +
-      "Hosted using github pages and Google Domains. " +
-      "Photos have been compressed, resized, and converted to WebP format for quicker gallery load time.",
+      "Developed a Discord bot in TypeScript that serves daily chess puzzles" +
+      "to a community of 3500+ users across 15+ channels. The bot includes personalized scheduling, " + 
+      "real-time error monitoring via Sentry.io, and smooth deployment using Docker on Fly.io. " +
+      "It's all about keeping the chess puzzles coming, hassle-free.",
     imgName: "lichessMockup",
     technologies: [
       {
-        name: "ReactJS",
-        url: "https://reactjs.org/",
-        iconName: "ReactIcon",
+        name: "Typescript",
+        url: "https://www.typescriptlang.org/",
+        iconName: "TypescriptIcon",
       },
       {
-        name: "Mui",
-        url: "https://mui.com/",
-        iconName: "MuiIcon",
+        name: "Sentry",
+        url: "https://sentry.io/",
+        iconName: "SentryIcon",
       },
       {
-        name: "Sass",
-        url: "https://sass-lang.com/",
-        iconName: "SassIcon",
+        name: "Docker",
+        url: "https://www.docker.com/",
+        iconName: "DockerIcon",
       },
       {
-        name: "Sharp",
-        url: "https://sharp.pixelplumbing.com/",
-        iconName: "SharpIcon",
+        name: "Fly",
+        url: "https://fly.io/",
+        iconName: "FlyIcon",
       },
+
     ],
     actions: [
       {

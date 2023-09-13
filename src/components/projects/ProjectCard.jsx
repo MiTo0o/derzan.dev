@@ -20,9 +20,11 @@ import lichessMockup from "../../assets/mockups/lichess-bot-mockup.png";
 import SharpIcon from "../customMuiSvgIcons/SharpIcon/SharpIcon";
 
 // react icons
-import { SiMaterialui, SiReact } from "react-icons/si";
+import { SiMaterialui, SiReact, SiSentry, SiTypescript } from "react-icons/si";
 
-import { FaSass } from "react-icons/fa";
+import { FaSass, FaDocker, FaFly } from "react-icons/fa";
+
+// import { DiDocker } from "react-icons/di";
 
 // mui built in icons
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -67,7 +69,15 @@ function returnCorrectIconOrImage(iconOrImageName) {
       return <SiReact />;
     case "SassIcon":
       return <FaSass />;
-
+    case "SentryIcon":
+      return <SiSentry />;
+    case "DockerIcon":
+      return <FaDocker />;
+    case "FlyIcon":
+      return <FaFly />;
+    case "TypescriptIcon":
+      return <SiTypescript />;
+      
     // casses for mui built in icons
     case "GitHubIcon":
       return <GitHubIcon />;
