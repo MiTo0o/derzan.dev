@@ -43,7 +43,7 @@ function Title() {
           "Foodie",
           "Home Chef",
           "Manga Reader",
-          "Korean Soft Tunes Listener"
+          "Korean Soft Tunes Listener",
         ]}
         smartBackspace
         shuffle={true}
