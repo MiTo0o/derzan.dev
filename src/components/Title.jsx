@@ -29,12 +29,24 @@ function Title() {
         typeSpeed={50}
         backSpeed={35}
         strings={[
-          "I am a Back End Developer",
-          "I am a Front End Developer",
-          "I am a Full Stack Developer",
+          "Cat Lover",
+          "Dog Lover",
+          "Software Engineer",
+          "Full Stack Developer",
+          "Factorio Fan",
+          "Animal Petter",
+          "Python Enthusiast",
+          "Java Avoider",
+          "Boba Tea Critic",
+          "Terraria Explorer",
+          "3 v 3 Basketball Enjoyer",
+          "Foodie",
+          "Home Chef",
+          "Manga Reader",
+          "Korean Soft Tunes Listener"
         ]}
         smartBackspace
-        shuffle={false}
+        shuffle={true}
         backDelay={1000}
         fadeOut={false}
         fadeOutDelay={100}

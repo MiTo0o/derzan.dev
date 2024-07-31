@@ -107,12 +107,12 @@ const data = [
     actions: [
       {
         name: "Source",
-        url: "https://github.com/MiTo0o/doggos",
+        url: "https://github.com/MiTo0o/lichess-daily-puzzle-discord-bot",
         iconName: "GitHubIcon",
       },
       {
         name: "Live",
-        url: "https://doggos.derzan.dev/",
+        url: "https://derzan.dev/",
         iconName: "VisibilityIcon",
       },
     ],
